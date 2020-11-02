@@ -1,0 +1,103 @@
+/* CSS Variables */
+:root {
+    /*Warm tones*/
+    --blackboard: #565656;
+    --grain: #D7CEC7;
+    --oxblood: #76323F;
+    --tan: #C09F80;
+    /*Professional and modern tones*/
+    --screen:#C5C1C0;
+    --steel:#0A1612;
+    --denim: #1A2930;
+    --marigold: #F7CE3E;
+}
+
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    color: var(--steel);
+}
+section.header {
+    background-color: var(--denim);
+    width: auto;
+    height: 12%;
+    padding: 0 2% 0 2%;
+    color: white;
+}
+.header-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-nav-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.page-nav-container a {
+    color: white;
+    font-size: 2.8vh;
+    width: 5vw;
+    font-weight: normal;
+    text-decoration: none;
+}
+.page-nav-container a:active, .page-nav-container a:hover {
+    font-weight: 900;
+    color: var(--marigold);
+}
+.page-nav-container a:visited {
+    /* color: var(--marigold); */
+}
+
+section.content {
+    background-color: var(--screen);/* #fffdfa;*/
+    height: 82%;
+    width: 100%;
+}
+
+.form-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    /* padding: 3% 0; */
+}
+.form-container-item input {
+    outline: none;
+    border: none;
+    min-width: 20vw;
+    height: 4.5vh;
+    /* border-radius: 20%; */
+}
+.form-container-item input:hover  {
+    background-color: var(--marigold);
+    font-weight: 700;
+}
+.form-container-item button {
+    outline: none;
+    border: none;
+    min-width: 7vw;
+    min-height: 7vh;
+    border-radius: 10%;
+}
+.form-container-item button:hover  {
+    background-color: var(--marigold);
+    font-weight: 700;
+}
+.form-container-item input[type=radio] {
+    min-width: 0;
+    width: auto;
+    height: auto;
+}
+section.footer {
+    background-color: var(--denim);
+    height: 6%;
+    width: 100%;
+    color: white;
+}

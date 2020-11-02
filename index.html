@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>San Maria Dental Clinic</title>
+        <link rel="stylesheet"
+            type="text/css"
+            href="style.css"/>
+    </head>
+    <body>
+        <section class="header">
+            <div class="header-container">
+                <h1>New Case Register</h1>
+                <div class="page-nav-container">
+                    <a href="index.html">New</a>
+                    <a href="existing-case.html">Existing</a>
+                </div>
+            </div>    
+        </section>
+
+        <section class="content">
+            <form action="/index.html" class="form-container">
+                <div class="name-container form-container-item">
+                    <input type="text" name="first-name" placeholder="First Name"/>
+                    <input type="text" name="middle-name" placeholder="Middle Name"/>
+                    <input type="text" name="last-name" placeholder="Last Name"/>
+                </div>
+                <div class="gender-container form-container-item">
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male </label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female </label>
+                    <input type="radio" name="gender" id="other" value="other">
+                    <label for="other">Other</label>
+                </div>
+                <div class="dob-container form-container-item">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" name="dob" id="dob">
+                    <input type="number" name="age" placeholder="Age" min="0" max="150">
+
+                </div>
+
+                <div class="address-container form-container-item">
+                    <input type="text" name="address-one" placeholder="Address Line 1">
+                    <input type="text" name="address-two" placeholder="Address Line 2">
+                    <input type="text" name="address-three" placeholder="Address Line 3">
+                </div>
+                <div class="form-container-item">
+                    <input type="number" name="pin" placeholder="Pincode">
+                </div>
+
+                <div class="contact-container form-container-item">
+                    <input type="number" name="primary-contact" placeholder="Primary Contact Number" minlength="10">
+                    <input type="number" name="alternate-contact" placeholder="Alternate Contact Number" minlength="10">
+                </div>
+                
+                <div class="form-container-item">
+                    <input type="text" name="email" placeholder="Email Address">
+                </div>
+
+                <div class="form-button-container form-container-item">
+                    <button type="reset" name="reset">Reset</button>
+                    <button type="submit" name="save">Save</button>
+                </div>
+
+            </form>
+
+        </section>
+
+        <section class="footer">
+            <span>Copyright 2020</span>
+
+        </section>
+
+    </body>
+</html>
