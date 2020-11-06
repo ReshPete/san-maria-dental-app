@@ -157,29 +157,35 @@ section.footer {
 }
 
 /* Findings page */
-.findings .collapsible {
+
+div.findings {
+    margin: 1% 2%;
+}
+.findings button.collapsible {
     background-color: var(--blackboard);
     color: white;
     cursor: pointer;
-    padding: 18px;
+    padding: 1.5% 3%;
     width: 100%;
-    border: none;
     text-align: left;
     outline: none;
     font-size: 15px;
+    border: 1px solid white;
+    border-bottom: none;
 }
 
 .findings .options {
-  padding: 0 18px;
+  padding: 0;
   display: none;
   overflow: hidden;
   background-color: var(--tan);
+  border: 1px solid white;
 }
 
 .options ul{
     list-style: none;
-    padding: 2%;
+    padding: 0;
 }
 .options ul li{
-    padding: 1%;
+    padding: 1% 3%;
 }
