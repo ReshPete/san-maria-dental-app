@@ -64,22 +64,31 @@ section.content {
     height: 83%;
     width: 100%;
     overflow-y: auto;
-    padding: 5% 0;
+    padding: 5% 0;    
 }
 
 .form-container {
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
-    /* padding: 3% 0; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url('./images/dental.jpg');
+    background-color: rgba(100,100,100);
+    background-blend-mode: overlay;
+
+    padding: 3% 0;
 }
 .form-container-item input {
     outline: none;
     border: none;
     min-width: 20vw;
     height: 4.5vh;
+    padding: 0 10px;
+    margin: 0 10px;
     /* border-radius: 20%; */
 }
 .form-container-item input:hover  {
