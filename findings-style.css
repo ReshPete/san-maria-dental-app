@@ -1,0 +1,137 @@
+/* Findings page */
+
+div.treatment-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 1% 2%;
+
+}
+div.findings {
+    margin: 0;
+    padding: 0;
+    width: 23%;
+}
+
+.findings button.collapsible {
+    background-color: var(--blackboard);
+    color: white;
+    cursor: pointer;
+    padding: 3% 3%;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border: 1px solid white;
+    border-bottom: none;
+}
+
+.findings .options {
+  padding: 0;
+  display: none;
+  overflow: hidden;
+  background-color: var(--tan);
+  border: 1px solid white;
+}
+
+.options ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.options ul li{
+    padding: 1% 3%;
+}
+.options ul li:hover{
+    background-color: var(--oxblood);
+    cursor: pointer;
+    color: white;
+}
+
+div.teeth-selector {
+    width: 75%;
+    height: auto;
+    background-color: var(--tan);
+    color: white;
+}
+
+div.view-options {
+    text-align: right;
+    margin: 1% 2%;
+}
+
+.quadrants{
+    width: 100%;
+    margin: 2% 0;
+    text-align: center;
+}
+.lower-row > div, .upper-row > div   {
+    display: inline-block;
+    background-color:var(--blackboard) ;
+    padding: 3% 1.5%;
+
+
+}
+.quadrants .quadrant-1, .quadrants .quadrant-2 {
+    margin-bottom:5px;
+} 
+.quadrants button {
+    width: 3.5vw;
+    outline: none;
+    height: 3.5vw;
+    border: none;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.quadrants button:hover {
+    background-color: var(--oxblood);
+    color: white;
+    box-shadow: var(--tan) 2px 2px 5px;
+}
+.quadrants button:active {
+    background-color: var(--oxblood);
+    color: white;
+    box-shadow: var(--tan) 2px 2px 5px;
+}
+.tooth-surface {
+    color: black;
+    text-align: center;
+    width:100%;
+    padding: 2% 0;
+}
+
+.remarks {
+    margin: 2% 5%;
+    color: black;
+}
+
+.remarks-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1%;
+}
+
+
+.remarks-container .remarks{
+    margin: 1.5%;    
+}
+.remarks input {    
+    width: 30vw;
+    height: 5vh;
+}
+.remarks button.delete {    
+    width: 6vw;
+    height: 6vh;
+}
+div.remarks-buttons {
+    text-align: center;
+    margin-bottom: 3%;
+}
+.remarks-buttons button.add-another {
+    width: 7vw;
+    height: 5vh;
+}
+
